@@ -10,20 +10,25 @@ import {
   Button,
 } from "@mui/material";
 
+import Grid from "@mui/material/Grid2";
+import { styled } from "@mui/material/styles";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Tooltip from "@mui/material/Tooltip";
-
-import Grid from '@mui/material/Grid2';
-import { styled } from "@mui/material/styles";
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+
+{
+  /*Navbar Icons*/
+}
+import HomeIcon from "@mui/icons-material/Home";
+import FolderIcon from "@mui/icons-material/Folder";
+import BuildIcon from "@mui/icons-material/Build";
+import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 
 {
   /*Images and Image Stuff*/
 }
-
+import Image from "next/image";
 import github_cool from "../public/github_cool.jpg";
 import smart_study_logo from "../public/smart_study_logo.png";
 import smart_translate_logo from "../public/smart_translate_logo.png";
@@ -47,29 +52,25 @@ import trademark_logo from "../public/trademark_logo.png";
 import doris_logo from "../public/doris_logo.png";
 import mapcs from "../public/mapcs.png";
 
-{/*Bottom Navigation aka Main Navbar Icons*/}
-import HomeIcon from '@mui/icons-material/Home';
-import FolderIcon from '@mui/icons-material/Folder';
-import BuildIcon from '@mui/icons-material/Build';
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
-
-{/*Icons for Fixed Column on Left*/}
+{
+  /*Icons for Fixed Column on Left*/
+}
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
 import EmailIcon from "@mui/icons-material/Email";
+import Link from "next/link";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#fff',
+  backgroundColor: "#fff",
   ...theme.typography.body2,
   padding: theme.spacing(1),
-  textAlign: 'center',
+  textAlign: "center",
   color: theme.palette.text.secondary,
-  ...theme.applyStyles('dark', {
-    backgroundColor: '#1A2027',
+  ...theme.applyStyles("dark", {
+    backgroundColor: "#1A2027",
   }),
 }));
-
 
 export default function HomePage() {
   const [value, setValue] = React.useState("recents");
@@ -412,7 +413,7 @@ export default function HomePage() {
                   fontWeight: 900,
                   textTransform: "uppercase",
                   fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: "left",
+                  textAlign: { xs: "center", md: "left" }, 
                   maxWidth: "800px",
                 }}
               >
@@ -495,10 +496,998 @@ export default function HomePage() {
               </Box>
             </Box>
 
+            {/*This is the second section on the right side. Projects section*/}
+            <Box
+              sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem" },
+                  textAlign: { xs: "center", md: "left" }, 
+                  maxWidth: "800px",
+                }}
+              >
+                Personal Projects
+              </Typography>
 
-            
+              <Box mt={4}>
+                <Grid
+                  container
+                  spacing={4}
+                  sx={{
+                    maxWidth: "800px",
+                    flexDirection: { xs: "column", md: "row" },
+                  }}
+                >
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      width: { xs: "100%", md: "100%" },
+                    }}
+                  >
+                    {/*First Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "550px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "50%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={smart_study_logo}
+                            alt="Smart Study Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          CURRENT PROJECT | JavaScript, Next.js, React, MUI,
+                          OpenAI, Firebase
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Smart Study
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Smart Study is a project that I began working on in
+                          August. The purpose of this project is to serve as a
+                          study website strictly for engineering students. Users
+                          will be able to create flashcards, generate cards
+                          using AI, watch videos, take quizzes, and much more.
+                          The waitlist for Smart Study is live, click the button
+                          to join!
+                        </Typography>
+                        <Link
+                          href="https://smartstudycs.vercel.app/"
+                          target="_blank"
+                        >
+                          <Button
+                            sx={{
+                              backgroundColor: "red",
+                              borderRadius: 100,
+                              paddingLeft: 3,
+                              paddingRight: 3,
+                              color: "#ffffff",
+                              fontFamily: "Kanit",
+                              marginLeft: "-5px",
+                            }}
+                          >
+                            Read more
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
 
+                    {/*Second Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "650px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={smart_translate_logo}
+                            alt="Smart Translate Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          CURRENT PROJECT | JavaScript, Next.JS, React, MUI,
+                          Google APIs
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Smart Translate
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Smart Translate is a project that I began working on
+                          very recently. The purpose of this project is to serve
+                          as a translation website for text, speech, and videos.
+                          Users will be able to enter text, use their mic, or
+                          input a YouTube video and then select a language for
+                          it to be translated. There is no site or waitlist for
+                          this project yet, but check out the GitHub repo below!
+                        </Typography>
+                        <Link
+                          href="https://github.com/hamim23z/SmartTranslate-Main"
+                          target="_blank"
+                        >
+                          <Button
+                            sx={{
+                              backgroundColor: "red",
+                              borderRadius: 100,
+                              paddingLeft: 3,
+                              paddingRight: 3,
+                              color: "#ffffff",
+                              fontFamily: "Kanit",
+                              marginLeft: "-5px",
+                            }}
+                          >
+                            Read more
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
 
+                    {/*Third Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "650px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={chronicleai_logo}
+                            alt="ChronicleAI Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          August 2024 | JavaScript, Next.JS, React, MUI, OpenAI
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Chronicle AI
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          ChronicleAI is a project that me and my friends worked
+                          on in August 2024, a lot of the project was completed
+                          in August and we made minor tweaks after. The purpose
+                          of this project is to serve as an AI chatbot for
+                          Computer Science students. Users can ask anything CS
+                          related . The project is completed, click the button
+                          to check it out!
+                        </Typography>
+                        <Link
+                          href="https://chronicle-ai-omega.vercel.app/"
+                          target="_blank"
+                        >
+                          <Button
+                            sx={{
+                              backgroundColor: "red",
+                              borderRadius: 100,
+                              paddingLeft: 3,
+                              paddingRight: 3,
+                              color: "#ffffff",
+                              fontFamily: "Kanit",
+                              marginLeft: "-5px",
+                            }}
+                          >
+                            Read more
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
+
+                    {/*Fourth Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "625px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={blizzardbot_logo}
+                            alt="Blizzard Bot Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          January 2023 | Python, Discord.py
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Blizzard Bot
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Blizzard Bot is a Discord based bot that I worked on
+                          early 2023 very frequently. The purpose of this
+                          project was to allow users in Discord servers to
+                          convert shoe sizes, check websites for bot security,
+                          give information about which companies are the best.
+                          This project is completed, click the button to check
+                          it out!
+                        </Typography>
+                        <Link
+                          href="https://github.com/hamim23z/BlizzardBot1"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Button
+                            sx={{
+                              backgroundColor: "red",
+                              borderRadius: 100,
+                              paddingLeft: 3,
+                              paddingRight: 3,
+                              color: "#ffffff",
+                              fontFamily: "Kanit",
+                              marginLeft: "-5px",
+                            }}
+                          >
+                            Read more
+                          </Button>
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Box>
+            </Box>
+
+            {/*This is the third section on the right side. Experience section*/}
+            <Box
+              sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem" },
+                  textAlign: { xs: "center", md: "left" }, 
+                  maxWidth: "800px",
+                }}
+              >
+                Professional Experience
+              </Typography>
+
+              <Box mt={4}>
+                <Grid
+                  container
+                  spacing={4}
+                  sx={{
+                    maxWidth: "800px",
+                    flexDirection: { xs: "column", md: "row" },
+                  }}
+                >
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      width: { xs: "100%", md: "100%" },
+                    }}
+                  >
+                    {/*First Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "550px", 
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "50%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={doris_logo}
+                            alt="DORIS Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          July 2024 - Jan 2024 | NYC Department of Records
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Software Engineer Intern
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Developed a Python-based website monitoring system using Docker and Azure, increasing uptime by 15% and reducing false positives by 40% while enabling proactive issue resolution for critical web services. Created a custom script to compress PDF files efficiently, reducing file sizes by 60% and improving performance for web-based document delivery systems. Led a redesign of the internal company website, focusing on user-centric design principles to create a more efficient and visually appealing platform.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+
+                    {/*Second Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "670px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={nycddc_logo}
+                            alt="DDC Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          June 2023 - Oct 2023 | NYC Department of Design and Construction
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Software Engineer & IT Intern
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Developed and implemented a Python-based Hash File system to efficiently identify Laptop device IDs, reducing vulnerability assessment time and improving overall responses. Managed a cross-functional team in executing a major software system rollout, device updates and software installations; resulting in a 25% reduction in downtime. Led the identification of vulnerabilities, performed repairs, updated hundreds of devices, and deployed new software, alongside creating user and support accounts on laptops and mobile devices.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+
+                    {/*Third Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "650px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={trademark_logo}
+                            alt="Trademark Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          July 2021 - June 2023 | Trademark Services
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Sneaker Information Developer
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Designed a sophisticated multi-tiered Discord bot using Python and JavaScript to provide instant updates on sneaker and clothing releases, including essential details like location and timing. Optimized the software platform by integrating new features that led to an increase in monthly subscriptions and improved customer retention through valuable user insights. Facilitated pull requests, code reviews, and stress testing to ensure the quality of data throughout the Software Development Life Cycle.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+
+                    {/*Fourth Card*/}
+                    <Card
+                      sx={(theme) => ({
+                        marginTop: theme.spacing(7),
+                        borderRadius: theme.spacing(2),
+                        transition: "all 0.3s ease-in-out",
+                        position: "relative",
+                        maxWidth: "100%",
+                        overflow: "initial",
+                        background: "#151312",
+                        color: "white",
+                        border: "1px solid white",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        paddingBottom: theme.spacing(2),
+                        [theme.breakpoints.up("md")]: {
+                          flexDirection: "row",
+                          paddingTop: theme.spacing(2),
+                        },
+                        width: "100%",
+                        height: "320px",
+                        [theme.breakpoints.down("sm")]: {
+                          height: "625px", // Increased height for smaller screens
+                        },
+                        "&:hover": {
+                          transform: "translateY(-4px)",
+                        },
+                      })}
+                    >
+                      <Box
+                        sx={(theme) => ({
+                          width: "88%",
+                          maxWidth: 300,
+                          position: "relative",
+                          marginTop: theme.spacing(-3),
+                          aspectRatio: "1/1",
+                          [theme.breakpoints.up("md")]: {
+                            width: 300,
+                            marginLeft: theme.spacing(-3),
+                            marginTop: 0,
+                            flexShrink: 0,
+                          },
+                        })}
+                      >
+                        <Box
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        >
+                          <Image
+                            src={fyllan_logo}
+                            alt="Fyllan Logo"
+                            style={{
+                              objectFit: "cover",
+                              borderRadius: "150px",
+                              background: "transparent",
+                              width: "200px",
+                              height: "200px",
+                            }}
+                          />
+                        </Box>
+                      </Box>
+                      <CardContent>
+                        <Typography
+                          variant="overline"
+                          sx={{
+                            letterSpacing: "1px",
+                            fontSize: 12,
+                            marginBottom: "0.875em",
+                            display: "inline-block",
+                          }}
+                        >
+                          Oct 2020 - Feb 2021 | Fyllan
+                        </Typography>
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontWeight: "bold",
+                            marginBottom: "0.35em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Web Development Intern
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            marginBottom: 2,
+                            letterSpacing: "0.00938em",
+                            fontFamily: "Kanit",
+                          }}
+                        >
+                          Created an interactive reservation system with real-time availability updates using JavaScript and AJAX, leading to a 30% increase in online bookings for Fyllan restaurants. Integrated third-party APIs using JavaScript&apos;s fetch API, enhancing website functionality with features like real-time restaurant updates and social media feeds. Collaborated with senior developers to design and implement interfaces, merging feedback to refine the UI/UX.
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Box>
