@@ -10,7 +10,7 @@ import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
 import { CardBlog } from "../components/CardBlog"; // Import the CardBlog component
-
+import { CardExperience } from "../components/CardExperience"; // Import the CardExperience component
 
 
 {/*Navbar Icons*/}
@@ -313,14 +313,12 @@ export default function HomePage() {
               <CardHighlight />
             </Box>
 
-
-
             {/*This is the second section on the right side. Projects*/}
             <Box
               sx={{
                 marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
                 paddingX: { xs: "10px", md: "50px" },
-                justifyContent: "left"
+                justifyContent: "left",
               }}
             >
               <Typography
@@ -340,6 +338,35 @@ export default function HomePage() {
 
               {/*This is where my projects that I am highlighting on cards go*/}
               <CardBlog />
+            </Box>
+
+
+
+            {/*This is the third section on the right side. Experience*/}
+            <Box
+              sx={{
+                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
+                paddingX: { xs: "10px", md: "50px" },
+                justifyContent: "left",
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem", lg: "4rem" },
+                  textAlign: { xs: "center", md: "left" },
+                  maxWidth: "800px",
+                  marginTop: "100px",
+                }}
+              >
+                My Experience
+              </Typography>
+
+              {/*This is where my projects that I am highlighting on cards go*/}
+              <CardExperience />
             </Box>
 
 
