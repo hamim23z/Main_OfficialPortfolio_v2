@@ -427,7 +427,7 @@ export default function HomePage() {
                   fontSize: { xs: "0.9rem", md: "1.2rem" },
                   lineHeight: { xs: "1.5", md: "1.8" },
                   textAlign: "left",
-                  maxWidth: "1100px",
+                  maxWidth: "800px",
                   marginTop: "20px",
                 }}
               >
@@ -450,7 +450,6 @@ export default function HomePage() {
                   spacing={4}
                   sx={{
                     maxWidth: "800px",
-                    marginX: "auto",
                     flexDirection: { xs: "column", md: "row" },
                     alignItems: "center",
                     justifyContent: "center",
@@ -514,7 +513,7 @@ export default function HomePage() {
                 </Typography>
               </div>
 
-              <Box mt={4} sx={{ maxWidth: "1100px" }}>
+              <Box mt={4} sx={{ maxWidth: "800px" }}>
                 <Grid
                   container
                   spacing={4}
@@ -1062,7 +1061,7 @@ export default function HomePage() {
                 </Typography>
               </div>
 
-              <Box mt={4} sx={{ maxWidth: "1100px" }}>
+              <Box mt={4} sx={{ maxWidth: "800px" }}>
                 <Grid
                   container
                   spacing={4}
