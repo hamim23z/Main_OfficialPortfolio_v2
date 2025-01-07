@@ -287,7 +287,7 @@ export default function HomePage() {
                   marginTop: "80px",
                   border: "2px solid #fff",
                   padding: 2,
-                  marginLeft: { xs: 0, md: "50px" }
+                  marginLeft: { xs: "auto", md: "50px" }
                 }}
               >
                 <Image
