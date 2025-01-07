@@ -160,7 +160,7 @@ export function CardHighlight() {
     <Grid container spacing={4}>
       <Grid item>
         <CustomCard
-          color="#fc7944"
+          color="#111" //subject to change. this is the diagonal color of the first two cards
           brand={"Personal Project"}
           date={"Currently Working On"}
           cover={smart_study_logo}
@@ -174,7 +174,7 @@ export function CardHighlight() {
       </Grid>
       <Grid item>
         <CustomCard
-          color="#5357ce"
+          color="#111"
           brand={"Personal Project"}
           date={"Currently Working On"}
           cover={smart_translate_logo}
