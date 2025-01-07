@@ -413,7 +413,7 @@ export default function HomePage() {
                   fontWeight: 900,
                   textTransform: "uppercase",
                   fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" }, 
+                  textAlign: { xs: "center", md: "left" },
                   maxWidth: "800px",
                 }}
               >
@@ -507,19 +507,19 @@ export default function HomePage() {
                   fontWeight: 900,
                   textTransform: "uppercase",
                   fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" }, 
+                  textAlign: { xs: "center", md: "left" },
                   maxWidth: "800px",
                 }}
               >
                 Personal Projects
               </Typography>
 
-              <Box mt={4}>
+              <Box mt={4} sx = {{maxWidth: "1100px"}}>
                 <Grid
                   container
                   spacing={4}
                   sx={{
-                    maxWidth: "800px",
+                    maxWidth: "100",
                     flexDirection: { xs: "column", md: "row" },
                   }}
                 >
@@ -1053,19 +1053,19 @@ export default function HomePage() {
                   fontWeight: 900,
                   textTransform: "uppercase",
                   fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" }, 
+                  textAlign: { xs: "center", md: "left" },
                   maxWidth: "800px",
                 }}
               >
                 Professional Experience
               </Typography>
 
-              <Box mt={4}>
+              <Box mt={4} sx = {{maxWidth: "1100px"}}>
                 <Grid
                   container
                   spacing={4}
                   sx={{
-                    maxWidth: "800px",
+                    maxWidth: "100",
                     flexDirection: { xs: "column", md: "row" },
                   }}
                 >
@@ -1100,7 +1100,7 @@ export default function HomePage() {
                         width: "100%",
                         height: "320px",
                         [theme.breakpoints.down("sm")]: {
-                          height: "550px", 
+                          height: "550px",
                         },
                         "&:hover": {
                           transform: "translateY(-4px)",
@@ -1174,7 +1174,16 @@ export default function HomePage() {
                             fontFamily: "Kanit",
                           }}
                         >
-                          Developed a Python-based website monitoring system using Docker and Azure, increasing uptime by 15% and reducing false positives by 40% while enabling proactive issue resolution for critical web services. Created a custom script to compress PDF files efficiently, reducing file sizes by 60% and improving performance for web-based document delivery systems. Led a redesign of the internal company website, focusing on user-centric design principles to create a more efficient and visually appealing platform.
+                          Developed a Python-based website monitoring system
+                          using Docker and Azure, increasing uptime by 15% and
+                          reducing false positives by 40% while enabling
+                          proactive issue resolution for critical web services.
+                          Created a custom script to compress PDF files
+                          efficiently, reducing file sizes by 60% and improving
+                          performance for web-based document delivery systems.
+                          Led a redesign of the internal company website,
+                          focusing on user-centric design principles to create a
+                          more efficient and visually appealing platform.
                         </Typography>
                       </CardContent>
                     </Card>
@@ -1256,7 +1265,8 @@ export default function HomePage() {
                             display: "inline-block",
                           }}
                         >
-                          June 2023 - Oct 2023 | NYC Department of Design and Construction
+                          June 2023 - Oct 2023 | NYC Department of Design and
+                          Construction
                         </Typography>
                         <Typography
                           variant="h5"
@@ -1276,7 +1286,17 @@ export default function HomePage() {
                             fontFamily: "Kanit",
                           }}
                         >
-                          Developed and implemented a Python-based Hash File system to efficiently identify Laptop device IDs, reducing vulnerability assessment time and improving overall responses. Managed a cross-functional team in executing a major software system rollout, device updates and software installations; resulting in a 25% reduction in downtime. Led the identification of vulnerabilities, performed repairs, updated hundreds of devices, and deployed new software, alongside creating user and support accounts on laptops and mobile devices.
+                          Developed and implemented a Python-based Hash File
+                          system to efficiently identify Laptop device IDs,
+                          reducing vulnerability assessment time and improving
+                          overall responses. Managed a cross-functional team in
+                          executing a major software system rollout, device
+                          updates and software installations; resulting in a 25%
+                          reduction in downtime. Led the identification of
+                          vulnerabilities, performed repairs, updated hundreds
+                          of devices, and deployed new software, alongside
+                          creating user and support accounts on laptops and
+                          mobile devices.
                         </Typography>
                       </CardContent>
                     </Card>
@@ -1378,7 +1398,16 @@ export default function HomePage() {
                             fontFamily: "Kanit",
                           }}
                         >
-                          Designed a sophisticated multi-tiered Discord bot using Python and JavaScript to provide instant updates on sneaker and clothing releases, including essential details like location and timing. Optimized the software platform by integrating new features that led to an increase in monthly subscriptions and improved customer retention through valuable user insights. Facilitated pull requests, code reviews, and stress testing to ensure the quality of data throughout the Software Development Life Cycle.
+                          Designed a sophisticated multi-tiered Discord bot
+                          using Python and JavaScript to provide instant updates
+                          on sneaker and clothing releases, including essential
+                          details like location and timing. Optimized the
+                          software platform by integrating new features that led
+                          to an increase in monthly subscriptions and improved
+                          customer retention through valuable user insights.
+                          Facilitated pull requests, code reviews, and stress
+                          testing to ensure the quality of data throughout the
+                          Software Development Life Cycle.
                         </Typography>
                       </CardContent>
                     </Card>
@@ -1480,7 +1509,15 @@ export default function HomePage() {
                             fontFamily: "Kanit",
                           }}
                         >
-                          Created an interactive reservation system with real-time availability updates using JavaScript and AJAX, leading to a 30% increase in online bookings for Fyllan restaurants. Integrated third-party APIs using JavaScript&apos;s fetch API, enhancing website functionality with features like real-time restaurant updates and social media feeds. Collaborated with senior developers to design and implement interfaces, merging feedback to refine the UI/UX.
+                          Created an interactive reservation system with
+                          real-time availability updates using JavaScript and
+                          AJAX, leading to a 30% increase in online bookings for
+                          Fyllan restaurants. Integrated third-party APIs using
+                          JavaScript&apos;s fetch API, enhancing website
+                          functionality with features like real-time restaurant
+                          updates and social media feeds. Collaborated with
+                          senior developers to design and implement interfaces,
+                          merging feedback to refine the UI/UX.
                         </Typography>
                       </CardContent>
                     </Card>
