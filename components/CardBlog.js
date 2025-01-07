@@ -24,7 +24,9 @@ export function CardBlog() {
           maxWidth: 800,
           marginLeft: "auto",
           overflow: "initial",
-          background: "#ffffff",
+          background: "#151312",
+          color: "#ffffff",
+          border: "1px solid #ffffff",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -45,7 +47,7 @@ export function CardBlog() {
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
@@ -108,7 +110,9 @@ export function CardBlog() {
           maxWidth: 800,
           marginLeft: "auto",
           overflow: "initial",
-          background: "#ffffff",
+          background: "#151312",
+          color: "#ffffff",
+          border: "1px solid #ffffff",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -129,7 +133,7 @@ export function CardBlog() {
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
@@ -191,7 +195,9 @@ export function CardBlog() {
           maxWidth: 800,
           marginLeft: "auto",
           overflow: "initial",
-          background: "#ffffff",
+          background: "#151312",
+          color: "#ffffff",
+          border: "1px solid #ffffff",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -212,7 +218,7 @@ export function CardBlog() {
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
@@ -273,7 +279,9 @@ export function CardBlog() {
           maxWidth: 800,
           marginLeft: "auto",
           overflow: "initial",
-          background: "#ffffff",
+          background: "#151312",
+          color: "#ffffff",
+          border: "1px solid #ffffff",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -294,7 +302,7 @@ export function CardBlog() {
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >

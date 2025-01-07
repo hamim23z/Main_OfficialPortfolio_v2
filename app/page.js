@@ -370,7 +370,35 @@ export default function HomePage() {
             </Box>
 
 
-            
+            {/*This is the fourth and final secion on the right side. Tech Stach*/}
+            <Box
+              sx={{
+                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
+                paddingX: { xs: "10px", md: "50px" },
+                justifyContent: "left",
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem", lg: "4rem" },
+                  textAlign: { xs: "center", md: "left" },
+                  maxWidth: "800px",
+                  marginTop: "100px",
+                }}
+              >
+                Tech Stack
+              </Typography>
+
+              {/*This is where my tech stack cards go*/}
+              
+            </Box>
+
+
+
           </Grid>
         </Grid>
       </Box>
