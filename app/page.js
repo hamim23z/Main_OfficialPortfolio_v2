@@ -279,7 +279,7 @@ export default function HomePage() {
                   justifyContent: "center",
                   alignItems: "center",
                   height: "500px",
-                  maxWidth: "300px",
+                  maxWidth: "370px",
                   width: "100%",
                   flexDirection: "column",
                   borderRadius: "10px",
@@ -287,12 +287,11 @@ export default function HomePage() {
                   border: "2px solid #fff",
                   padding: 2,
                   marginLeft: { xs: "auto", md: "50px" },
-                  marginRight: { xs: "auto", lg: "auto" }, // Center for laptops and larger
+                  marginRight: { xs: "auto", lg: "auto" },
                   "@media (min-width: 1024px) and (max-width: 1440px)": {
-                    // Target laptop screens
                     marginLeft: "auto",
                     marginRight: "auto",
-                    marginTop: "100px", // Adjust vertical alignment for laptops
+                    marginTop: "100px",
                   },
                 }}
               >
