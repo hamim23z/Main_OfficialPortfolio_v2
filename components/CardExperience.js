@@ -46,13 +46,14 @@ export function CardExperience() {
             marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
+            paddingRight: "15%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
           <Image
-            src=""  // Hardcoded image path
+            src="/doris_logo.png"  // Hardcoded image path
             alt="Smart Study"
             layout="fill"
             objectFit="cover"
@@ -120,13 +121,14 @@ export function CardExperience() {
             marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
+            paddingRight: "15%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
           <Image
-            src=""  // Hardcoded image path
+            src="/nycddc_logo.png"  // Hardcoded image path
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
@@ -193,13 +195,14 @@ export function CardExperience() {
             marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
+            paddingRight: "15%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
           <Image
-            src=""  // Hardcoded image path
+            src="/trademark_logo.png"  // Hardcoded image path
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
@@ -265,13 +268,14 @@ export function CardExperience() {
             marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
+            paddingRight: "15%",
             borderRadius: "16px",
-            backgroundColor: "#fff",
+            backgroundColor: "#151312",
             position: "relative",
           }}
         >
           <Image
-            src=""  // Hardcoded image path
+            src="/fyllan_logo.png"  // Hardcoded image path
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
