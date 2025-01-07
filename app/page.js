@@ -78,6 +78,152 @@ export default function HomePage() {
     setValue(newValue);
   };
 
+  const StyledRoot = styled("div")(() => ({
+    position: "relative",
+    borderRadius: "1rem",
+    minWidth: 320,
+    paddingTop: 60,
+    "&:before": {
+      transition: "0.2s",
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      content: '""',
+      display: "block",
+      borderRadius: "1rem",
+      zIndex: 0,
+      bottom: 0,
+      backgroundColor: "#6e00b3",
+    },
+    "&:hover": {
+      "&:before": {
+        bottom: -6,
+      },
+    },
+  }));
+
+  const CardMediaCover = styled(Box)(() => ({
+    borderRadius: "1rem",
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    top: 0,
+    left: 0,
+    zIndex: 0,
+  }));
+
+  const StyledContent = styled("div")(() => ({
+    position: "relative",
+    zIndex: 1,
+    padding: "1rem",
+    borderRadius: "1rem",
+    "&:before": {
+      content: '""',
+      display: "block",
+      position: "absolute",
+      left: 0,
+      top: 1,
+      zIndex: 0,
+      width: "100%",
+      height: "100%",
+      clipPath:
+        "polygon(0% 100%, 0% 35%, 0.3% 33%, 1% 31%, 1.5% 30%, 2% 29%, 2.5% 28.4%, 3% 27.9%, 3.3% 27.6%, 5% 27%,95% 0%,100% 0%, 100% 100%)",
+      borderRadius: "1rem",
+      background: "#151312",
+    },
+  }));
+
+  const AvatarLogo = styled(Box)(() => ({
+    transition: "0.3s",
+    width: 100,
+    height: 100,
+    borderRadius: "1rem",
+    position: "relative",
+    overflow: "hidden",
+  }));
+
+  const ProjectCard = ({ cover, logo, title, brand, date }) => {
+    return (
+      <StyledRoot>
+        <CardMediaCover>
+          <Image
+            src={cover}
+            alt="Project Cover"
+            fill
+            style={{
+              objectFit: "cover",
+              borderRadius: "1rem",
+            }}
+          />
+        </CardMediaCover>
+        <StyledContent>
+          <Box position={"relative"} zIndex={1}>
+            <Box display="flex" p={0} gap={2} sx={{ flexWrap: "nowrap" }}>
+              <Box>
+                <AvatarLogo>
+                  <Image
+                    src={logo}
+                    alt="Project Logo"
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+                </AvatarLogo>
+              </Box>
+              <Box alignSelf="flex-end">
+                <Typography
+                  variant="h5"
+                  sx={{
+                    fontFamily: "Kanit",
+                    fontWeight: 700,
+                    color: "#fff",
+                    margin: 0,
+                  }}
+                >
+                  {title}
+                </Typography>
+              </Box>
+            </Box>
+            <Box display="flex" mt={4} alignItems={"center"}>
+              <Box>
+                <Typography
+                  variant="subtitle2"
+                  sx={{
+                    fontFamily: "Kanit",
+                  }}
+                >
+                  {brand}
+                </Typography>
+              </Box>
+              <Box ml="auto">
+                <Typography
+                  variant="caption"
+                  sx={{
+                    fontFamily: "Kanit",
+                    color: "#fff",
+                    padding: "0.25rem 0.5rem",
+                    borderRadius: "12px",
+                  }}
+                >
+                  {date}
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </StyledContent>
+      </StyledRoot>
+    );
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [openCardId, setOpenCardId] = useState(null);
+
+  const handleNavigation = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Box>
@@ -128,10 +274,9 @@ export default function HomePage() {
         </BottomNavigation>
       </Box>
 
-
       {/* All components will go in here. Besides the navbar */}
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={20}>
           {/* Left Section */}
           <Grid item xs={12} sm={4}>
             <Container fixed>
@@ -146,7 +291,7 @@ export default function HomePage() {
                   width: "100%",
                   flexDirection: "column",
                   borderRadius: "10px",
-                  marginTop: "100px",
+                  marginTop: "80px",
                   border: "2px solid #fff",
                   padding: 2,
                 }}
@@ -257,7 +402,103 @@ export default function HomePage() {
 
           {/* Right Section */}
           <Grid item xs={12} sm={8}>
-            <Item>size=8</Item>
+            <Box
+              sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem" },
+                  textAlign: "left",
+                  maxWidth: "800px",
+                }}
+              >
+                Software Engineer
+              </Typography>
+
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "0.9rem", md: "1.2rem" },
+                  lineHeight: { xs: "1.5", md: "1.8" },
+                  textAlign: "left",
+                  maxWidth: "1100px",
+                  marginTop: "20px",
+                }}
+              >
+                Hey! I&apos;m Hamim Choudhury, a Computer Science student at The
+                City College of New York. My journey of coding started in middle
+                school, where I took a computer course and used MIT&apos;s
+                Scratch as my first language. <br></br> <br></br>And that is how
+                my passion for coding began. I started off by building simple
+                websites and I explored how to code myself. I now code on a
+                regular basis, learning a multitude of languages and using them
+                very often. <br></br> <br></br> I started off as a frontend
+                engineer only, but have now become a full-stack engineer. I love
+                to build projects that can solve real-world problems and ones
+                that people will use on a regular basis.
+              </Typography>
+
+              <Box mt={4}>
+                <Grid
+                  container
+                  spacing={4}
+                  sx={{
+                    maxWidth: "800px",
+                    marginX: "auto",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      width: { xs: "100%", md: "48%" },
+                      marginBottom: { xs: "20px", md: "0" },
+                    }}
+                  >
+                    <ProjectCard
+                      brand={"Personal Project"}
+                      date={"Currently Working On"}
+                      cover={smart_study_logo}
+                      logo={smart_study_logo}
+                      title={"Smart Study"}
+                    />
+                  </Grid>
+
+                  <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{
+                      width: { xs: "100%", md: "48%" },
+                    }}
+                  >
+                    <ProjectCard
+                      brand={"Personal Project"}
+                      date={"Currently Working On"}
+                      cover={smart_translate_logo}
+                      logo={smart_translate_logo}
+                      title={"Smart Translate"}
+                    />
+                  </Grid>
+                </Grid>
+              </Box>
+            </Box>
+
+
+            
+
+
           </Grid>
         </Grid>
       </Box>
