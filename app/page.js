@@ -258,7 +258,7 @@ export default function HomePage() {
           <Grid item xs={12} sm={8}>
             <Box
               sx={{
-                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for small screens
+                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
                 paddingX: { xs: "10px", md: "50px" },
               }}
             >
