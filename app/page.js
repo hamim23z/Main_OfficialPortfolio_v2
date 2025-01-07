@@ -9,6 +9,8 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
 import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
+import { CardBlog } from "../components/CardBlog"; // Import the CardBlog component
+
 
 
 {/*Navbar Icons*/}
@@ -289,7 +291,7 @@ export default function HomePage() {
                   textAlign: "left",
                   maxWidth: "800px",
                   marginTop: "20px",
-                  marginBottom: "40px"
+                  marginBottom: "40px",
                 }}
               >
                 Hey! I&apos;m Hamim Choudhury, a Computer Science student at The
@@ -306,11 +308,42 @@ export default function HomePage() {
                 solve real-world problems and ones that people will use on a
                 regular basis.
               </Typography>
-              
+
               {/*This is where the two current projects that I am working on cards go*/}
               <CardHighlight />
-
             </Box>
+
+
+
+            {/*This is the second section on the right side. Projects*/}
+            <Box
+              sx={{
+                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
+                paddingX: { xs: "10px", md: "50px" },
+                justifyContent: "left"
+              }}
+            >
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem", lg: "4rem" },
+                  textAlign: { xs: "center", md: "left" },
+                  maxWidth: "800px",
+                  marginTop: "100px",
+                }}
+              >
+                Personal Projects
+              </Typography>
+
+              {/*This is where my projects that I am highlighting on cards go*/}
+              <CardBlog />
+            </Box>
+
+
+            
           </Grid>
         </Grid>
       </Box>
