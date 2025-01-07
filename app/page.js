@@ -22,27 +22,6 @@ import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 {/*Images and Image Stuff*/}
 import Image from "next/image";
 import github_cool from "../public/github_cool.jpg";
-import smart_study_logo from "../public/smart_study_logo.png";
-import smart_translate_logo from "../public/smart_translate_logo.png";
-import html_logo from "../public/html_logo.png";
-import css_logo from "../public/css_logo.png";
-import javascript_logo from "../public/javascript_logo.png";
-import nextjs_logo from "../public/nextjs_logo.png";
-import react_logo from "../public/react_logo.png";
-import mui_logo from "../public/mui_logo.png";
-import python_logo from "../public/python_logo.png";
-import flask_logo from "../public/flask_logo.png";
-import docker_logo from "../public/docker_logo.png";
-import openai_logo from "../public/openai_logo.png";
-import firebase_logo from "../public/firebase_logo.png";
-import mysql_logo from "../public/mysql_logo.png";
-import chronicleai_logo from "../public/chronicleai_logo.png";
-import blizzardbot_logo from "../public/blizzardbot_logo.png";
-import nycddc_logo from "../public/nycddc_logo.png";
-import fyllan_logo from "../public/fyllan_logo.png";
-import trademark_logo from "../public/trademark_logo.png";
-import doris_logo from "../public/doris_logo.png";
-import mapcs from "../public/mapcs.png";
 
 {/*Icons for Fixed Column on Left*/}
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -63,9 +42,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function HomePage() {
-  {
-    /*Code for Handling Navbar Buttons going to certain sections within the page*/
-  }
+  {/*Code for Handling Navbar Buttons going to certain sections within the page*/}
   const [value, setValue] = React.useState("recents");
 
   const handleChange = (event, newValue) => {
@@ -322,6 +299,7 @@ export default function HomePage() {
               }}
             >
               <Typography
+                id="projects"
                 variant="h1"
                 sx={{
                   fontFamily: "Kanit",
@@ -351,6 +329,7 @@ export default function HomePage() {
               }}
             >
               <Typography
+                id="experience"
                 variant="h1"
                 sx={{
                   fontFamily: "Kanit",
@@ -379,6 +358,7 @@ export default function HomePage() {
               }}
             >
               <Typography
+                id="tech_stack"
                 variant="h1"
                 sx={{
                   fontFamily: "Kanit",
