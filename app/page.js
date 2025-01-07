@@ -8,6 +8,8 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Tooltip from "@mui/material/Tooltip";
 import { useState } from "react";
+import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
+
 
 {/*Navbar Icons*/}
 import HomeIcon from "@mui/icons-material/Home";
@@ -287,6 +289,7 @@ export default function HomePage() {
                   textAlign: "left",
                   maxWidth: "800px",
                   marginTop: "20px",
+                  marginBottom: "40px"
                 }}
               >
                 Hey! I&apos;m Hamim Choudhury, a Computer Science student at The
@@ -303,6 +306,10 @@ export default function HomePage() {
                 solve real-world problems and ones that people will use on a
                 regular basis.
               </Typography>
+              
+              {/*This is where the two current projects that I am working on cards go*/}
+              <CardHighlight />
+
             </Box>
           </Grid>
         </Grid>
