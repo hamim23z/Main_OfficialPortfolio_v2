@@ -278,7 +278,7 @@ export default function HomePage() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  height: "450px",
+                  height: "500px",
                   maxWidth: "300px",
                   width: "100%",
                   flexDirection: "column",
