@@ -228,49 +228,48 @@ export default function HomePage() {
   return (
     <>
       <Box>
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => setValue(newValue)}
-        sx={{
-          background: "#151312",
-          display: "flex",
-        }}
-      >
-        <Tooltip title="Home" arrow>
-          <BottomNavigationAction
-            icon={<HomeIcon sx={{ color: "white" }} />}
-            onClick={() => handleNavigation("home")}
-          />
-        </Tooltip>
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => setValue(newValue)}
+          sx={{
+            background: "#151312",
+            display: "flex",
+          }}
+        >
+          <Tooltip title="Home" arrow>
+            <BottomNavigationAction
+              icon={<HomeIcon sx={{ color: "white" }} />}
+              onClick={() => handleNavigation("home")}
+            />
+          </Tooltip>
 
-        <Tooltip title="Projects" arrow>
-          <BottomNavigationAction
-            icon={<FolderIcon sx={{ color: "white" }} />}
-            onClick={() => handleNavigation("projects")}
-          />
-        </Tooltip>
+          <Tooltip title="Projects" arrow>
+            <BottomNavigationAction
+              icon={<FolderIcon sx={{ color: "white" }} />}
+              onClick={() => handleNavigation("projects")}
+            />
+          </Tooltip>
 
-        <Tooltip title="Experience" arrow>
-          <BottomNavigationAction
-            icon={<WorkHistoryIcon sx={{ color: "white" }} />}
-            onClick={() => handleNavigation("experience")}
-          />
-        </Tooltip>
+          <Tooltip title="Experience" arrow>
+            <BottomNavigationAction
+              icon={<WorkHistoryIcon sx={{ color: "white" }} />}
+              onClick={() => handleNavigation("experience")}
+            />
+          </Tooltip>
 
-        <Tooltip title="Tech Stack" arrow>
-          <BottomNavigationAction
-            icon={<BuildIcon sx={{ color: "white" }} />}
-            onClick={() => handleNavigation("tech_stack")}
-          />
-        </Tooltip>
-      </BottomNavigation>
+          <Tooltip title="Tech Stack" arrow>
+            <BottomNavigationAction
+              icon={<BuildIcon sx={{ color: "white" }} />}
+              onClick={() => handleNavigation("tech_stack")}
+            />
+          </Tooltip>
+        </BottomNavigation>
       </Box>
 
       {/* All components will go in here. Besides the navbar */}
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={20}>
-          {/* Left Section */}
           <Grid item xs={12} sm={4}>
             <Container fixed>
               <Box
@@ -287,7 +286,14 @@ export default function HomePage() {
                   marginTop: "80px",
                   border: "2px solid #fff",
                   padding: 2,
-                  marginLeft: { xs: "auto", md: "50px" }
+                  marginLeft: { xs: "auto", md: "50px" },
+                  marginRight: { xs: "auto", lg: "auto" }, // Center for laptops and larger
+                  "@media (min-width: 1024px) and (max-width: 1440px)": {
+                    // Target laptop screens
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                    marginTop: "100px", // Adjust vertical alignment for laptops
+                  },
                 }}
               >
                 <Image
@@ -494,22 +500,22 @@ export default function HomePage() {
               sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
             >
               <div id="projects">
-              <Typography
-                variant="h1"
-                sx={{
-                  fontFamily: "Kanit",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" },
-                  maxWidth: "800px",
-                }}
-              >
-                Personal Projects
-              </Typography>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    fontFamily: "Kanit",
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    fontSize: { xs: "2rem", md: "3rem" },
+                    textAlign: { xs: "center", md: "left" },
+                    maxWidth: "800px",
+                  }}
+                >
+                  Personal Projects
+                </Typography>
               </div>
 
-              <Box mt={4} sx = {{maxWidth: "1100px"}}>
+              <Box mt={4} sx={{ maxWidth: "1100px" }}>
                 <Grid
                   container
                   spacing={4}
@@ -1042,22 +1048,22 @@ export default function HomePage() {
               sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
             >
               <div id="experience">
-              <Typography
-                variant="h1"
-                sx={{
-                  fontFamily: "Kanit",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" },
-                  maxWidth: "800px",
-                }}
-              >
-                Professional Experience
-              </Typography>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    fontFamily: "Kanit",
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    fontSize: { xs: "2rem", md: "3rem" },
+                    textAlign: { xs: "center", md: "left" },
+                    maxWidth: "800px",
+                  }}
+                >
+                  Professional Experience
+                </Typography>
               </div>
 
-              <Box mt={4} sx = {{maxWidth: "1100px"}}>
+              <Box mt={4} sx={{ maxWidth: "1100px" }}>
                 <Grid
                   container
                   spacing={4}
@@ -1523,27 +1529,26 @@ export default function HomePage() {
               </Box>
             </Box>
 
-
             {/*This is the fourth and final section on the right side. Tech Stack*/}
             <Box
               sx={{ marginTop: "70px", paddingX: { xs: "10px", md: "50px" } }}
             >
               <div id="tech_stack">
-              <Typography
-                variant="h1"
-                sx={{
-                  fontFamily: "Kanit",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  fontSize: { xs: "2rem", md: "3rem" },
-                  textAlign: { xs: "center", md: "left" },
-                  maxWidth: "800px",
-                }}
-              >
-                Tech Stack
-              </Typography>
+                <Typography
+                  variant="h1"
+                  sx={{
+                    fontFamily: "Kanit",
+                    fontWeight: 900,
+                    textTransform: "uppercase",
+                    fontSize: { xs: "2rem", md: "3rem" },
+                    textAlign: { xs: "center", md: "left" },
+                    maxWidth: "800px",
+                  }}
+                >
+                  Tech Stack
+                </Typography>
               </div>
-              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Box>
