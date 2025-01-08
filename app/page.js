@@ -11,7 +11,9 @@ import { useState } from "react";
 import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
 import { CardBlog } from "../components/CardBlog"; // Import the CardBlog component
 import { CardExperience } from "../components/CardExperience"; // Import the CardExperience component
-
+import { TechStack } from "../components/TechStack";
+import { TechStack2 } from "../components/TechStack2";
+import { TechStack3 } from "../components/TechStack3";
 
 {/*Navbar Icons*/}
 import HomeIcon from "@mui/icons-material/Home";
@@ -355,6 +357,7 @@ export default function HomePage() {
                 marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
                 paddingX: { xs: "10px", md: "50px" },
                 justifyContent: "left",
+                marginBottom: "100px"
               }}
             >
               <Typography
@@ -373,12 +376,15 @@ export default function HomePage() {
                 Tech Stack
               </Typography>
 
-              {/*This is where my tech stack cards go*/}
-              
+              {/*This is where my tech stack cards go. First row*/}
+              <TechStack></TechStack>
+
+              {/*This is where my tech stack cards go. Second row*/}
+              <TechStack2></TechStack2>
+
+              {/*This is where my tech stack cards go. Third row*/}
+              <TechStack3></TechStack3>
             </Box>
-
-
-
           </Grid>
         </Grid>
       </Box>
