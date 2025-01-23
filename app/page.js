@@ -210,7 +210,7 @@ export default function HomePage() {
                   </Link>
 
                   <Link
-                    href="https://drive.google.com/file/d/1GNjD6HFwWnTZg1Q7N1Kvi39tFudlOAae/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1QgSMJmI-tLn_iyH0t_5uT-Y6cRE2yKpe/view?usp=sharing"
                     target="_blank"
                     passHref
                     style={{
