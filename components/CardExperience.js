@@ -19,7 +19,6 @@ export function CardExperience() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -41,7 +40,7 @@ export function CardExperience() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -53,8 +52,8 @@ export function CardExperience() {
           }}
         >
           <Image
-            src="/doris_logo.png"  // Hardcoded image path
-            alt="Smart Study"
+            src="/doris_logo.png" 
+            alt="DORIS Logo"
             layout="fill"
             objectFit="cover"
             style={{ borderRadius: "100%" }}
@@ -63,7 +62,7 @@ export function CardExperience() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -71,7 +70,7 @@ export function CardExperience() {
               marginBottom: "0.875em",
             }}
           >
-            July 2024 - Jan 2024 | NYC Department of Records
+            July 2024 - Jan 2025 | NYC Department of Records
           </Typography>
 
           <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
@@ -94,7 +93,6 @@ export function CardExperience() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -116,7 +114,7 @@ export function CardExperience() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -129,7 +127,7 @@ export function CardExperience() {
         >
           <Image
             src="/nycddc_logo.png"  // Hardcoded image path
-            alt="Smart Translate"
+            alt="DDC Logo"
             layout="fill"
             objectFit="cover"
             style={{ borderRadius: "100%" }}
@@ -138,7 +136,7 @@ export function CardExperience() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -168,7 +166,6 @@ export function CardExperience() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -190,7 +187,7 @@ export function CardExperience() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -203,7 +200,7 @@ export function CardExperience() {
         >
           <Image
             src="/trademark_logo.png"  // Hardcoded image path
-            alt="Smart Translate"
+            alt="Trademark Logo"
             layout="fill"
             objectFit="cover"
             style={{ borderRadius: "100%" }}
@@ -212,7 +209,7 @@ export function CardExperience() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -241,7 +238,6 @@ export function CardExperience() {
           margin: "auto",
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -263,7 +259,7 @@ export function CardExperience() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -276,7 +272,7 @@ export function CardExperience() {
         >
           <Image
             src="/fyllan_logo.png"  // Hardcoded image path
-            alt="Smart Translate"
+            alt="Fyllan Logo"
             layout="fill"
             objectFit="cover"
             style={{ borderRadius: "100%" }}
@@ -285,7 +281,7 @@ export function CardExperience() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",

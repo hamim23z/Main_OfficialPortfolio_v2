@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";  // Use Next.js Image for optimized images
+import Image from "next/image";
 import Link from "next/link";
 
 // Component that renders all cards
@@ -20,7 +20,6 @@ export function CardBlog() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -42,7 +41,7 @@ export function CardBlog() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -63,7 +62,7 @@ export function CardBlog() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -127,7 +126,6 @@ export function CardBlog() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -149,7 +147,7 @@ export function CardBlog() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -170,7 +168,7 @@ export function CardBlog() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -238,7 +236,6 @@ export function CardBlog() {
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -260,7 +257,7 @@ export function CardBlog() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -281,7 +278,7 @@ export function CardBlog() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
@@ -344,7 +341,6 @@ export function CardBlog() {
           margin: "auto",
           borderRadius: theme.spacing(2),
           transition: "0.3s",
-          boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
           position: "relative",
           maxWidth: 800,
           marginLeft: "auto",
@@ -366,7 +362,7 @@ export function CardBlog() {
           component="div"
           sx={{
             width: "88%",
-            marginLeft: "auto",
+            marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
             height: 0,
@@ -387,7 +383,7 @@ export function CardBlog() {
         <CardContent sx={{ fontFamily: "Kanit" }}>
           <Typography
             variant="subtitle2"
-            color="#111"
+            color="#fff"
             sx={{
               textTransform: "uppercase",
               letterSpacing: "1px",
