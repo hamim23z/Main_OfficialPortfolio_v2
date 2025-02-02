@@ -147,6 +147,7 @@ export function CardBlog() {
           component="div"
           sx={{
             width: "88%",
+            minWidth: "210px",
             marginLeft: "10px",
             marginRight: "auto",
             marginTop: "-20px",
@@ -202,14 +203,13 @@ export function CardBlog() {
           >
             Smart Translate is a project that I began working on recently. The
             purpose of this project is to serve as a translation website for
-            text and videos. Users will be able to enter text or input a YouTube
-            video and then select a language for it to be translated. There is
-            no site or waitlist for this project yet, but check out the GitHub
-            repo below!
+            text and videos. Users will be able to enter text or input a video link
+            and then select a language for it to be translated. The site is now live, with the text translation ready and the video translate
+            still in development. Click the button to check it out!
           </Typography>
 
           <Link
-            href="https://github.com/hamim23z/SmartTranslate-Main"
+            href="https://smarttranslatehub.vercel.app/"
             target="_blank"
           >
             <Button

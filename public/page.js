@@ -2311,7 +2311,7 @@ export default function HomePage() {
                       fontFamily: "Kanit",
                     }}
                   >
-                    Sneaker Information Developer
+                    Software Developer
                   </Typography>
                   <Typography
                     variant="body2"
@@ -2455,7 +2455,7 @@ export default function HomePage() {
                             fontSize: "2rem",
                           }}
                         >
-                          Sneaker Information Developer
+                          Software Developer
                         </Typography>
                         <Typography
                           variant="body2"

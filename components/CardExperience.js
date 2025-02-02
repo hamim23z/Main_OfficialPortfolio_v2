@@ -221,7 +221,7 @@ export function CardExperience() {
           </Typography>
 
           <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
-          Sneaker Information Developer
+          Software Developer
           </Typography>
 
           <Typography variant="body2" sx={{ marginBottom: 2, fontSize: "0.8rem", letterSpacing: "0.00938em", fontFamily: "Kanit" }}>
