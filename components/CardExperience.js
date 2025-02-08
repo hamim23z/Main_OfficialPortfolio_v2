@@ -21,6 +21,7 @@ export function CardExperience() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -34,6 +35,11 @@ export function CardExperience() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #5F409C",
+          },
         })}
       >
         <CardMedia
@@ -42,7 +48,6 @@ export function CardExperience() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             paddingRight: "15%",
@@ -52,7 +57,7 @@ export function CardExperience() {
           }}
         >
           <Image
-            src="/doris_logo.png" 
+            src="/doris_logo.png"
             alt="DORIS Logo"
             layout="fill"
             objectFit="cover"
@@ -70,21 +75,40 @@ export function CardExperience() {
               marginBottom: "0.875em",
             }}
           >
-            July 2024 - Jan 2025 | NYC Department of Records
+            NYC Department of Records | July 2024 - Jan 2025
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
-          Software Engineer Intern
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "900",
+              marginBottom: "0.35em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Software Engineer Intern
           </Typography>
 
-          <Typography variant="body2" sx={{ marginBottom: 2, fontSize: "0.8rem", letterSpacing: "0.00938em", fontFamily: "Kanit" }}>
-          Developed a Python-based website monitoring system using Docker and Azure, increasing uptime by 15% and reducing false positives by 40% while enabling proactive issue resolution for critical web services. Created a custom script to compress PDF files efficiently, reducing file sizes by 60% and improving performance for web-based document delivery systems. Led a redesign of the internal company website, focusing on user-centric design principles to create a more efficient and visually appealing platform.
+          <Typography
+            variant="body2"
+            sx={{
+              marginBottom: 2,
+              fontSize: "0.8rem",
+              letterSpacing: "0.00938em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Developed a Python-based website monitoring system using Docker and
+            Azure, increasing uptime by 15% and reducing false positives by 40%
+            while enabling proactive issue resolution for critical web services.
+            Created a custom script to compress PDF files efficiently, reducing
+            file sizes by 60% and improving performance for web-based document
+            delivery systems. Led a redesign of the internal company website,
+            focusing on user-centric design principles to create a more
+            efficient and visually appealing platform.
           </Typography>
         </CardContent>
       </Card>
-
-
-
 
       {/* Second Card */}
       <Card
@@ -95,6 +119,7 @@ export function CardExperience() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -108,6 +133,11 @@ export function CardExperience() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #002FA8",
+          },
         })}
       >
         <CardMedia
@@ -116,7 +146,6 @@ export function CardExperience() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             paddingRight: "15%",
@@ -126,7 +155,7 @@ export function CardExperience() {
           }}
         >
           <Image
-            src="/nycddc_logo.png"  // Hardcoded image path
+            src="/nycddc_logo.png" // Hardcoded image path
             alt="DDC Logo"
             layout="fill"
             objectFit="cover"
@@ -144,20 +173,40 @@ export function CardExperience() {
               marginBottom: "0.875em",
             }}
           >
-            June 2023 - Oct 2023 | NYC Department of Design and Construction
+            NYC Department of Design and Construction | June 2023 - Oct 2023
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
-          Software Engineer & IT Intern
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "900",
+              marginBottom: "0.35em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Software Engineer & IT Intern
           </Typography>
 
-          <Typography variant="body2" sx={{ marginBottom: 2, fontSize: "0.8rem", letterSpacing: "0.00938em", fontFamily: "Kanit" }}>
-          Developed and implemented a Python-based Hash File system to efficiently identify Laptop device IDs, reducing vulnerability assessment time and improving overall responses. Managed a cross-functional team in executing a major software system rollout, device updates and software installations; resulting in a 25% reduction in downtime. Led the identification of vulnerabilities, performed repairs, updated hundreds of devices, and deployed new software, alongside creating user and support accounts on laptops and mobile devices.
+          <Typography
+            variant="body2"
+            sx={{
+              marginBottom: 2,
+              fontSize: "0.8rem",
+              letterSpacing: "0.00938em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Developed a Python-based hash file system to extract hardware IDs
+            from Surface laptops, enabling rapid ticket creation and
+            streamlining vulnerability assessments. Led a cross-functional team
+            in managing hundreds of devices—performing system updates,
+            reimaging, and malware remediation—which resulted in a 25% reduction
+            in downtime. Created user and support accounts on laptops and mobile
+            devices to facilitate efficient device deployment and support
+            operations.
           </Typography>
         </CardContent>
       </Card>
-
-
 
       {/* Third Card */}
       <Card
@@ -168,6 +217,7 @@ export function CardExperience() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -181,6 +231,11 @@ export function CardExperience() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #5e1010",
+          },
         })}
       >
         <CardMedia
@@ -189,7 +244,6 @@ export function CardExperience() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             paddingRight: "15%",
@@ -199,7 +253,7 @@ export function CardExperience() {
           }}
         >
           <Image
-            src="/trademark_logo.png"  // Hardcoded image path
+            src="/trademark_logo.png" // Hardcoded image path
             alt="Trademark Logo"
             layout="fill"
             objectFit="cover"
@@ -217,20 +271,40 @@ export function CardExperience() {
               marginBottom: "0.875em",
             }}
           >
-            July 2021 - June 2023 | Trademark Services
+            Trademark Services | July 2021 - June 2023
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
-          Software Developer
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "900",
+              marginBottom: "0.35em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Software Developer
           </Typography>
 
-          <Typography variant="body2" sx={{ marginBottom: 2, fontSize: "0.8rem", letterSpacing: "0.00938em", fontFamily: "Kanit" }}>
-          Designed a sophisticated multi-tiered Discord bot using Python and JavaScript to provide instant updates on sneaker and clothing releases, including essential details like location and timing. Optimized the software platform by integrating new features that led to an increase in monthly subscriptions and improved customer retention through valuable user insights. Facilitated pull requests, code reviews, and stress testing to ensure the quality of data throughout the Software Development Life Cycle.
+          <Typography
+            variant="body2"
+            sx={{
+              marginBottom: 2,
+              fontSize: "0.8rem",
+              letterSpacing: "0.00938em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Designed a sophisticated multi-tiered Discord bot using Python and
+            JavaScript to provide instant updates on sneaker and clothing
+            releases, including essential details like location and timing.
+            Optimized the software platform by integrating new features that led
+            to an increase in monthly subscriptions and improved customer
+            retention through valuable user insights. Facilitated pull requests,
+            code reviews, and stress testing to ensure the quality of data
+            throughout the Software Development Life Cycle.
           </Typography>
         </CardContent>
       </Card>
-
-
 
       {/*Fourth Card*/}
       <Card
@@ -240,6 +314,7 @@ export function CardExperience() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -253,6 +328,11 @@ export function CardExperience() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #FE6F29",
+          },
         })}
       >
         <CardMedia
@@ -261,7 +341,6 @@ export function CardExperience() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             paddingRight: "15%",
@@ -271,7 +350,7 @@ export function CardExperience() {
           }}
         >
           <Image
-            src="/fyllan_logo.png"  // Hardcoded image path
+            src="/fyllan_logo.png" // Hardcoded image path
             alt="Fyllan Logo"
             layout="fill"
             objectFit="cover"
@@ -289,15 +368,37 @@ export function CardExperience() {
               marginBottom: "0.875em",
             }}
           >
-            Oct 2020 - Feb 2021 | Fyllan
+            Fyllan | Oct 2020 - Feb 2021
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: "900", marginBottom: "0.35em", fontFamily: "Kanit" }}>
-          Web Development Intern
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "900",
+              marginBottom: "0.35em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Web Development Intern
           </Typography>
 
-          <Typography variant="body2" sx={{ marginBottom: 2, fontSize: "0.8rem", letterSpacing: "0.00938em", fontFamily: "Kanit" }}>
-          Created an interactive reservation system with real-time availability updates using JavaScript and AJAX, leading to a 30% increase in online bookings for Fyllan restaurants. Integrated third-party APIs using JavaScript&apos;s fetch API, enhancing website functionality with features like real-time restaurant updates and social media feeds. Collaborated with senior developers to design and implement interfaces, merging feedback to refine the UI/UX.
+          <Typography
+            variant="body2"
+            sx={{
+              marginBottom: 2,
+              fontSize: "0.8rem",
+              letterSpacing: "0.00938em",
+              fontFamily: "Kanit",
+            }}
+          >
+            Created an interactive reservation system with real-time
+            availability updates using JavaScript and AJAX, leading to a 30%
+            increase in online bookings for Fyllan restaurants. Integrated
+            third-party APIs using JavaScript&apos;s fetch API, enhancing
+            website functionality with features like real-time restaurant
+            updates and social media feeds. Collaborated with senior developers
+            to design and implement interfaces, merging feedback to refine the
+            UI/UX.
           </Typography>
         </CardContent>
       </Card>

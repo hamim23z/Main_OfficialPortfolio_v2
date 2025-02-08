@@ -241,7 +241,7 @@ export default function HomePage() {
           <Grid item xs={12} sm={8}>
             <Box
               sx={{
-                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
+                marginTop: { xs: "30px", md: "0" },
                 paddingX: { xs: "10px", md: "50px" },
               }}
             >
@@ -292,37 +292,9 @@ export default function HomePage() {
               <CardHighlight />
             </Box>
 
-            {/*This is the second section on the right side. Projects*/}
-            <Box
-              sx={{
-                marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
-                paddingX: { xs: "10px", md: "50px" },
-                justifyContent: "left",
-              }}
-            >
-              <Typography
-                id="projects"
-                variant="h1"
-                sx={{
-                  fontFamily: "Kanit",
-                  fontWeight: 900,
-                  textTransform: "uppercase",
-                  fontSize: { xs: "2rem", md: "3rem", lg: "4rem" },
-                  textAlign: { xs: "center", md: "left" },
-                  maxWidth: "800px",
-                  marginTop: "100px",
-                }}
-              >
-                Personal Projects
-              </Typography>
-
-              {/*This is where my projects that I am highlighting on cards go*/}
-              <CardBlog />
-            </Box>
 
 
-
-            {/*This is the third section on the right side. Experience*/}
+            {/*This is the second section on the right side. Experience*/}
             <Box
               sx={{
                 marginTop: { xs: "30px", md: "0" }, // Adjust spacing for smaller screens
@@ -345,10 +317,39 @@ export default function HomePage() {
               >
                 My Experience
               </Typography>
-
-              {/*This is where my projects that I am highlighting on cards go*/}
+              {/*This is where my past internships that I am highlighting on cards go*/}
               <CardExperience />
             </Box>
+
+
+
+            {/*This is the third section on the right side. Projects*/}
+            <Box
+              sx={{
+                marginTop: { xs: "30px", md: "0" }, 
+                paddingX: { xs: "10px", md: "50px" },
+                justifyContent: "left",
+              }}
+            >
+              <Typography
+                id="projects"
+                variant="h1"
+                sx={{
+                  fontFamily: "Kanit",
+                  fontWeight: 900,
+                  textTransform: "uppercase",
+                  fontSize: { xs: "2rem", md: "3rem", lg: "4rem" },
+                  textAlign: { xs: "center", md: "left" },
+                  maxWidth: "800px",
+                  marginTop: "100px",
+                }}
+              >
+                Personal Projects
+              </Typography>
+              {/*This is where my projects that I am highlighting on cards go*/}
+              <CardBlog />
+            </Box>
+
 
 
             {/*This is the fourth and final secion on the right side. Tech Stach*/}

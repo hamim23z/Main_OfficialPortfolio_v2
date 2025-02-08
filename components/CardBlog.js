@@ -22,6 +22,7 @@ export function CardBlog() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -35,6 +36,11 @@ export function CardBlog() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #024AAF",
+          },
         })}
       >
         <CardMedia
@@ -43,7 +49,6 @@ export function CardBlog() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
@@ -70,8 +75,7 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            Current Project | Javascript, Next.js, React, MUI, OpenAI, Firebase,
-            Stack Auth
+            Current Project | Next.js, Node.js, React, Javascript, Material UI, Firebase, Stack Auth
           </Typography>
 
           <Typography
@@ -128,6 +132,7 @@ export function CardBlog() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -141,6 +146,11 @@ export function CardBlog() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #F43730",
+          },
         })}
       >
         <CardMedia
@@ -150,7 +160,6 @@ export function CardBlog() {
             minWidth: "210px",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
@@ -177,8 +186,7 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            Current Project | JavaScript, Next.JS, React, MUI, OpenAI, OpenAI
-            Whisper, Google APIs
+            Current Project | Next.js, Node.js, React, Javascript, Material UI, Open AI, Google Translate API
           </Typography>
 
           <Typography
@@ -238,6 +246,7 @@ export function CardBlog() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 260,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -251,6 +260,11 @@ export function CardBlog() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #5e1010",
+          },
         })}
       >
         <CardMedia
@@ -259,7 +273,6 @@ export function CardBlog() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
@@ -286,7 +299,7 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            August 2024 | JavaScript, Next.JS, React, MUI, OpenAI, Firebase
+            August 2024 | Next.js, Node.js, React, Javascript, Material UI, Firebase
           </Typography>
 
           <Typography
@@ -343,6 +356,7 @@ export function CardBlog() {
           transition: "0.3s",
           position: "relative",
           maxWidth: 800,
+          height: 250,
           marginLeft: "auto",
           overflow: "initial",
           background: "#151312",
@@ -356,6 +370,11 @@ export function CardBlog() {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
           },
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.1)",
+            border: "1px solid #2C3B5D",
+          },
         })}
       >
         <CardMedia
@@ -364,7 +383,6 @@ export function CardBlog() {
             width: "88%",
             marginLeft: "10px",
             marginRight: "auto",
-            marginTop: "-20px",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
