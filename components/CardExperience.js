@@ -5,9 +5,9 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";  // Use Next.js Image for optimized images
+import Image from "next/image"; 
 
-// Component that renders all cards
+// Component that renders all cards FOR EXPERIENCES
 export function CardExperience() {
   return (
     <>
@@ -20,8 +20,8 @@ export function CardExperience() {
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -30,30 +30,39 @@ export function CardExperience() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #5F409C",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #5F409C",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
-            paddingRight: "15%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
             src="/doris_logo.png"
@@ -113,12 +122,13 @@ export function CardExperience() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -127,33 +137,42 @@ export function CardExperience() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #002FA8",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #002FA8",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
-            paddingRight: "15%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/nycddc_logo.png" // Hardcoded image path
+            src="/nycddc_logo.png"
             alt="DDC Logo"
             layout="fill"
             objectFit="cover"
@@ -210,12 +229,13 @@ export function CardExperience() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -224,33 +244,42 @@ export function CardExperience() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #5E1010",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #5e1010",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
-            paddingRight: "15%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/trademark_logo.png" // Hardcoded image path
+            src="/trademark_logo.png"
             alt="Trademark Logo"
             layout="fill"
             objectFit="cover"
@@ -307,11 +336,13 @@ export function CardExperience() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
+          marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -320,33 +351,42 @@ export function CardExperience() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #FE6F29",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #FE6F29",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
-            paddingRight: "15%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/fyllan_logo.png" // Hardcoded image path
+            src="/fyllan_logo.png"
             alt="Fyllan Logo"
             layout="fill"
             objectFit="cover"

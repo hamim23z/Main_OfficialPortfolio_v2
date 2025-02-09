@@ -8,11 +8,10 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
 
-// Component that renders all cards
+// Component that renders all cards FOR PROJECTS
 export function CardBlog() {
   return (
     <>
-      {/* First Card */}
       <Card
         sx={(theme) => ({
           margin: "auto",
@@ -21,8 +20,8 @@ export function CardBlog() {
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -31,32 +30,42 @@ export function CardBlog() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #024AAF",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #024AAF",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/smart_study_logo.png" // Hardcoded image path
+            src="/smart_study_logo.png"
             alt="Smart Study"
             layout="fill"
             objectFit="cover"
@@ -74,7 +83,8 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            Current Project | Next.js, Node.js, React, Javascript, Material UI, Firebase, Stack Auth
+            Current Project | Next.js, Node.js, React, Javascript, Material UI,
+            Firebase, Stack Auth
           </Typography>
 
           <Typography
@@ -126,12 +136,13 @@ export function CardBlog() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -140,33 +151,42 @@ export function CardBlog() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #F43730",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #F43730",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
-            width: "88%",
-            minWidth: "210px",
-            marginLeft: "10px",
-            marginRight: "auto",
+          sx={(theme) => ({
+            width: "100%",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/smart_translate_logo.png" // Hardcoded image path
+            src="/smart_translate_logo.png"
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
@@ -184,7 +204,8 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            Current Project | Next.js, Node.js, React, Javascript, Material UI, Open AI, Google Translate API
+            Current Project | Next.js, Node.js, React, Javascript, Material UI,
+            Open AI, Google Translate API
           </Typography>
 
           <Typography
@@ -209,15 +230,13 @@ export function CardBlog() {
           >
             Smart Translate is a project that I began working on recently. The
             purpose of this project is to serve as a translation website for
-            text and videos. Users will be able to enter text or input a video link
-            and then select a language for it to be translated. The site is now live, with the text translation ready and the video translate
-            still in development. Click the button to check it out!
+            text and videos. Users will be able to enter text or a video link
+            and then select a language for it to be translated. The site is now
+            live, with the translation ready and the video translate in
+            development. Click the button to check it out!
           </Typography>
 
-          <Link
-            href="https://smarttranslatehub.vercel.app/"
-            target="_blank"
-          >
+          <Link href="https://smarttranslatehub.vercel.app/" target="_blank">
             <Button
               sx={{
                 backgroundColor: "red",
@@ -239,12 +258,13 @@ export function CardBlog() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
           marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -253,32 +273,42 @@ export function CardBlog() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #024AAF",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #5e1010",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/chronicleai_logo.png" // Hardcoded image path
+            src="/chronicleai_logo.png"
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
@@ -296,7 +326,8 @@ export function CardBlog() {
               marginBottom: "0.875em",
             }}
           >
-            August 2024 | Next.js, Node.js, React, Javascript, Material UI, Firebase
+            August 2024 | Next.js, Node.js, React, Javascript, Material UI,
+            Firebase
           </Typography>
 
           <Typography
@@ -349,11 +380,13 @@ export function CardBlog() {
       <Card
         sx={(theme) => ({
           margin: "auto",
+          marginTop: theme.spacing(5),
+          marginBottom: theme.spacing(5),
           borderRadius: theme.spacing(2),
           transition: "0.3s",
           position: "relative",
-          maxWidth: 800,
-          marginLeft: "auto",
+          maxWidth: "90%",
+          width: "100%",
           overflow: "initial",
           background: "#151312",
           color: "#ffffff",
@@ -362,32 +395,42 @@ export function CardBlog() {
           flexDirection: "column",
           alignItems: "center",
           paddingBottom: theme.spacing(2),
+          transition: "transform 0.4s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            border: "1px solid #024AAF",
+            [theme.breakpoints.up("md")]: {
+              transform: "scale(1.1)",
+            },
+          },
           [theme.breakpoints.up("md")]: {
             flexDirection: "row",
             paddingTop: theme.spacing(2),
-          },
-          transition: "transform 0.4s",
-          "&:hover": {
-            transform: "scale(1.1)",
-            border: "1px solid #2C3B5D",
+            maxWidth: 800,
           },
         })}
       >
         <CardMedia
           component="div"
-          sx={{
+          sx={(theme) => ({
             width: "88%",
-            marginLeft: "10px",
-            marginRight: "auto",
             height: 0,
             paddingBottom: "25%",
             borderRadius: "16px",
             backgroundColor: "#151312",
             position: "relative",
-          }}
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            [theme.breakpoints.up("md")]: {
+              marginLeft: "10px",
+              marginRight: "auto",
+            },
+          })}
         >
           <Image
-            src="/blizzardbot_logo.png" // Hardcoded image path
+            src="/blizzardbot_logo.png"
             alt="Smart Translate"
             layout="fill"
             objectFit="cover"
