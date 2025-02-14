@@ -1,17 +1,15 @@
 // components/CardExperience.js
 import React from "react";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import Image from "next/image"; 
+import Image from "next/image";
 
 // Component that renders all cards FOR EXPERIENCES
 export function CardExperience() {
   return (
     <>
-      {/* First Card */}
       <Card
         sx={(theme) => ({
           margin: "auto",
@@ -48,16 +46,15 @@ export function CardExperience() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -72,7 +69,7 @@ export function CardExperience() {
             style={{ borderRadius: "100%" }}
           />
         </CardMedia>
-        <CardContent sx={{ fontFamily: "Kanit" }}>
+        <CardContent sx={{ fontFamily: "Kanit", flex: 1 }}>
           <Typography
             variant="subtitle2"
             color="#fff"
@@ -106,14 +103,13 @@ export function CardExperience() {
               fontFamily: "Kanit",
             }}
           >
-            Developed a Python-based website monitoring system using Docker and
-            Azure, increasing uptime by 15% and reducing false positives by 40%
-            while enabling proactive issue resolution for critical web services.
-            Created a custom script to compress PDF files efficiently, reducing
-            file sizes by 60% and improving performance for web-based document
-            delivery systems. Led a redesign of the internal company website,
-            focusing on user-centric design principles to create a more
-            efficient and visually appealing platform.
+            Developed a Python-based website monitoring system using Docker and Azure,
+            increasing uptime by 15% and reducing false positives by 40% while enabling
+            proactive issue resolution for critical web services. Created a custom script
+            to compress PDF files efficiently, reducing file sizes by 60% and improving
+            performance for web-based document delivery systems. Led a redesign of the
+            internal company website, focusing on user-centric design principles to create
+            a more efficient and visually appealing platform.
           </Typography>
         </CardContent>
       </Card>
@@ -155,16 +151,15 @@ export function CardExperience() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -262,16 +257,15 @@ export function CardExperience() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -369,16 +363,15 @@ export function CardExperience() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",

@@ -48,16 +48,15 @@ export function CardBlog() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -169,16 +168,15 @@ export function CardBlog() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "100%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -291,16 +289,15 @@ export function CardBlog() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
@@ -413,16 +410,15 @@ export function CardBlog() {
         <CardMedia
           component="div"
           sx={(theme) => ({
-            width: "88%",
-            height: 0,
-            paddingBottom: "25%",
-            borderRadius: "16px",
+            width: 190,
+            height: 190,
+            borderRadius: "50%",
             backgroundColor: "#151312",
             position: "relative",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto",
+            flexShrink: 0,
             [theme.breakpoints.up("md")]: {
               marginLeft: "10px",
               marginRight: "auto",
