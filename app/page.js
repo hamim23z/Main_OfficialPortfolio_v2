@@ -7,7 +7,6 @@ import { styled } from "@mui/material/styles";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Tooltip from "@mui/material/Tooltip";
-import { useState } from "react";
 import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
 import { CardBlog } from "../components/CardBlog"; // Import the CardBlog component
 import { CardExperience } from "../components/CardExperience"; // Import the CardExperience component
@@ -123,14 +122,14 @@ export default function HomePage() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  height: { xs: "auto", md: "500px" }, // Adjust for responsiveness
+                  height: { xs: "auto", md: "500px" }, 
                   maxWidth: "370px",
                   width: "100%",
                   flexDirection: "column",
                   borderRadius: "10px",
                   border: "2px solid #fff",
                   padding: 2,
-                  marginLeft: { xs: "auto", md: "0" },
+                  marginLeft: { xs: "10px", md: "0" },
                   marginRight: { xs: "auto", lg: "auto" },
                 }}
               >

@@ -5,11 +5,11 @@ import Box from "@mui/material/Box";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
-import Color from "color"; // v3.2.1
+import Color from "color";
 import Image from "next/image";
 
 import smart_study_logo from "../public/smart_study_logo.png"
-import smart_translate_logo from "../public/smart_translate_logo.png"
+import smart_finder_logo from "../public/smart_finder_logo.png"
 
 // Styled components
 const defaultColor = "#747f84";
@@ -111,14 +111,14 @@ const StyledDivDate = styled("div")(() => ({
 // Custom Card component
 const CustomCard = ({ color, cover, logo, title, brand, date }) => {
     return (
-      <StyledRoot color={color}>
+      <StyledRoot color={color} sx = {{marginLeft: "10px"}}>
         <CardMediaCover>
           <Image 
             src={cover} 
             alt="cover" 
             layout="fill" 
             objectFit="cover" 
-            style={{ borderRadius: '1rem' }} // Optional styling
+            style={{ borderRadius: '1rem' }}
           />
         </CardMediaCover>
         <StyledContent color={color}>
@@ -131,7 +131,7 @@ const CustomCard = ({ color, cover, logo, title, brand, date }) => {
                     alt="logo" 
                     width={100} 
                     height={100} 
-                    style={{ borderRadius: "1rem" }} // Optional styling
+                    style={{ borderRadius: "1rem" }}
                   />
                 </AvatarLogo>
               </Box>
@@ -177,11 +177,11 @@ export function CardHighlight() {
           color="#111"
           brand={"Personal Project"}
           date={"Currently Working On"}
-          cover={smart_translate_logo}
-          logo={smart_translate_logo}
+          cover={smart_finder_logo}
+          logo={smart_finder_logo}
           title={
             <>
-              Smart Translate
+              Smart Finder
             </>
           }
         />

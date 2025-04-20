@@ -41,6 +41,7 @@ export function CardExperience() {
             paddingTop: theme.spacing(2),
             maxWidth: 800,
           },
+          mx: "auto"
         })}
       >
         <CardMedia
@@ -66,7 +67,7 @@ export function CardExperience() {
             alt="DORIS Logo"
             layout="fill"
             objectFit="cover"
-            style={{ borderRadius: "100%" }}
+            style={{ borderRadius: "100%", paddingTop: "10px" }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit", flex: 1 }}>
@@ -171,7 +172,7 @@ export function CardExperience() {
             alt="DDC Logo"
             layout="fill"
             objectFit="cover"
-            style={{ borderRadius: "100%" }}
+            style={{ borderRadius: "100%", paddingTop: "10px" }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -277,7 +278,7 @@ export function CardExperience() {
             alt="Trademark Logo"
             layout="fill"
             objectFit="cover"
-            style={{ borderRadius: "100%" }}
+            style={{ borderRadius: "100%", paddingTop: "10px" }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
@@ -383,7 +384,7 @@ export function CardExperience() {
             alt="Fyllan Logo"
             layout="fill"
             objectFit="cover"
-            style={{ borderRadius: "100%" }}
+            style={{ borderRadius: "100%", paddingTop: "10px" }}
           />
         </CardMedia>
         <CardContent sx={{ fontFamily: "Kanit" }}>
