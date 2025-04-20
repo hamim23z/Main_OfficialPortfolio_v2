@@ -129,7 +129,7 @@ export default function HomePage() {
                   borderRadius: "10px",
                   border: "2px solid #fff",
                   padding: 2,
-                  marginLeft: { xs: "10px", md: "0" },
+                  marginLeft: { xs: "auto", md: "0" },
                   marginRight: { xs: "auto", lg: "auto" },
                 }}
               >

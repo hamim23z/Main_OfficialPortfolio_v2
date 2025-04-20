@@ -111,7 +111,7 @@ const StyledDivDate = styled("div")(() => ({
 // Custom Card component
 const CustomCard = ({ color, cover, logo, title, brand, date }) => {
     return (
-      <StyledRoot color={color} sx = {{marginLeft: "10px"}}>
+      <StyledRoot color={color}>
         <CardMediaCover>
           <Image 
             src={cover} 
