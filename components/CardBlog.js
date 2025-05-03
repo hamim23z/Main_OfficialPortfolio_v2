@@ -95,7 +95,7 @@ export function CardBlog() {
               fontFamily: "Kanit",
             }}
           >
-            Smart Study
+            Smart Finder
           </Typography>
 
           <Typography
@@ -107,7 +107,7 @@ export function CardBlog() {
               fontFamily: "Kanit",
             }}
           >
-            Smart Study is a project that I am currently working on with other people. The
+            Smart Finder is a project that I am currently working on with other people. The
             purpose of this project is to serve as a map based, geolocation website for delis and
             bodegas. Within a certain radius, users will be able to see different stores and the sandwich
             prices there. They will be able to leave photos, reviews, and have access to deals too! Plenty of
