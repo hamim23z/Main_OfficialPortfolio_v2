@@ -7,9 +7,9 @@ import { styled } from "@mui/material/styles";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import Tooltip from "@mui/material/Tooltip";
-import { CardHighlight } from "../components/CardHighlight";  // Import the CardHighlight component
-import { CardBlog } from "../components/CardBlog"; // Import the CardBlog component
-import { CardExperience } from "../components/CardExperience"; // Import the CardExperience component
+import { CardHighlight } from "../components/CardHighlight";
+import { CardBlog } from "../components/CardBlog";
+import { CardExperience } from "../components/CardExperience";
 import { TechStack } from "../components/TechStack";
 import { TechStack2 } from "../components/TechStack2";
 import { TechStack3 } from "../components/TechStack3";
@@ -107,9 +107,9 @@ export default function HomePage() {
           spacing={2}
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" }, // Column on mobile, row on larger screens
-            justifyContent: "center", // Center align horizontally
-            alignItems: "flex-start", // Align items at the top
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            alignItems: "flex-start",
             marginTop: "50px",
           }}
         >
